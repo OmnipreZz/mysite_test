@@ -1,0 +1,275 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.Portfolio {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  @include flexCenter();
+}
+
+
+.CardCloub {
+  background-color: $dark;
+  height: 50vh;
+  width: 60vw;
+  border-radius: 15px;
+  border: 1px solid $orange;
+  padding: 1em;
+  -webkit-box-shadow: inset -4px 4px 30px 10px black;
+  -moz-box-shadow: inset -4px 4px 30px 10px black;
+  box-shadow: inset -4px 4px 30px 10px black;
+  display: grid;
+  grid-template-rows: 10vh 35vh 5vh;
+}
+
+.CardCloubHeader {
+  grid-row: 1;
+}
+
+.CardCloubBody {
+  grid-row: 2;
+  @include flexCenter();
+}
+
+.CardCloubFooter {
+  grid-row: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CardTechno {
+  height: 5vh;
+  width: 15em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.CardTechno i {
+  color: white;
+  font-size: 2em;
+}
+
+.CloubTitle {
+  text-align: center;
+  font-size: 25px;
+}
+
+.CloubText  {
+  text-align: center;
+}
+
+.CloubCircleBody {
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 10px 3px black;
+  -moz-box-shadow: 4px 4px 10px 3px black;
+  box-shadow: 4px 4px 10px 3px black;
+  height: 4em;
+  width: 4em;
+  margin: 0;
+  padding: 0;
+  @include flexCenter();
+}
+
+.CloubCircle {
+  border-radius: 50%;
+  -webkit-box-shadow: -3px -3px 10px 3px #48535a;
+  -moz-box-shadow: -3px -3px 10px 3px #48535a;
+  box-shadow: -3px -3px 10px 3px #48535a;
+  height: 4em;
+  width: 4em;
+  margin: 0;
+  padding: 0;
+  @include flexCenter();
+}
+
+.CloubImg {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  padding: 0.3em;
+  margin: 0;
+  border: 3px solid black;
+  cursor: pointer;
+  background-color: $dark;
+}
+
+.CloubImg:hover {
+  background-color: $orange;
+}
+
+.CloubImg:active,
+.CloubImg:focus {
+  height: 2.5em;
+  width: 2.5em;
+  -webkit-box-shadow: inset 4px 4px 15px 1px black;
+  -moz-box-shadow: inset 4px 4px 15px 1px black;
+  box-shadow: inset 4px 4px 15px 1px black;
+}
+
+.PortfolioBack {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+
+.PortfolioBack.activation {
+  display: grid;
+  grid-template-rows: 2em 1fr;
+}
+
+.PortfolioModal {
+  position: absolute;
+  width: 80vw;
+  max-height: 70vh;
+  z-index: 200;
+  margin: 0 auto;
+  background-color: $dark;
+  display: none;
+  border-radius: 15px;
+}
+
+.PortfolioModal.activation {
+  display: block;
+}
+
+.ModalHeader {
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+
+.ModalHeader button {
+  cursor: pointer;
+  // border-radius: 50%;
+  background: none;
+  border: none;
+  color: $grey;
+}
+
+.ModalContent {
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -2em;
+  display: grid;
+  grid-template-columns: 5em 1fr 5em;
+}
+
+.ModalContentPic {
+  grid-column: 2;
+  @include flexCenter();
+}
+
+.ProjetPic {
+  max-height: 70vh;
+  width: auto;
+}
+
+.picOpen {
+ display: block;
+}
+
+.picClose {
+  display: none;
+}
+
+.ModalButtonLeft {
+  grid-column: 1;
+  @include flexCenter();
+}
+
+.ModalButtonRight {
+  grid-column: 3;
+  @include flexCenter();
+}
+
+.ButtonArrow {
+  background: none;
+  font-size: 1.5em;
+  border: none;
+  color: $orange;
+  cursor: pointer;
+}
+
+.ButtonArrow:disabled {
+  color: black;
+}
+
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+    
+  .ProjetPic {
+    max-height: 50vh;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .Portfolio {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .PortfolioModal {
+    width: 100vw;
+  }
+
+  .MediaDesktop {
+    padding-right: 2em;
+  }
+
+  .ModalContent {
+    grid-template-columns: 2em 1fr 2em;
+  }
+  .ProjetPic {
+    max-height: 55vh;
+    width: auto;
+  }
+
+}
+
+@media all and (max-width: 572px) {
+
+  .CardCloub {
+    height: 70vh;
+    width: 80vw;
+    grid-template-rows: 20vh 45vh 5vh;
+  }
+
+  .CardCloubFooter {
+    justify-content: center;
+  }
+
+  .ProjetPic {
+    max-height: 45vh;
+    width: auto;
+  }
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}

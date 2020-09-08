@@ -1,0 +1,128 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.Contact {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+}
+
+.ContactLeft {
+  grid-column: 1;
+  height: 100vh;
+  width: 40vw;
+  display: grid;
+  grid-template-rows: 13vh 27vh 60vh;
+}
+
+.ContactRight {
+  grid-column: 2;
+  height: 100vh;
+}
+
+.ContactTitle {
+  grid-row: 1;
+  @include flexCenter();
+}
+
+.ContactTitle h1 {
+  color: $orange;
+  font-size: 45px;
+}
+
+.ContactInfo {
+  grid-row: 2;
+  @include flexCenter();
+}
+
+.ContactInfo i {
+  color: $orange;
+  padding-right: 0.1em;
+}
+
+
+.ContactIconList {
+  padding: 1em;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  width: 29.4vw;
+}
+
+.ContactFormDiv {
+  grid-row: 3;
+  height: 60vh;
+  @include flexCenter();
+}
+
+
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+
+}
+
+@media all and (max-width: 768px) {
+  .Contact {
+    height: 90vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .ContactRight {
+    display: none;
+  }
+
+  .ContactLeft {
+    height: 90vh;
+    width: 100vw;
+    grid-template-rows: 13vh 20vh 57vh;
+  }
+
+  .ContactInfo {
+    grid-row: 2;
+    grid-template-columns: 1fr;
+  }
+
+
+  .ContactIconList {
+    width: 100%;
+    margin: 2em;
+  }
+
+  .ContactFormDiv {
+    grid-row: 3;
+    height: 57vh;
+    @include flexCenter();
+  }
+
+
+}
+
+@media all and (max-width: 572px) {
+  .ContactIconList {
+    border: none;
+  }
+
+
+  .ContactInfoLeft {
+    height: 20vh;
+    
+  }
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}

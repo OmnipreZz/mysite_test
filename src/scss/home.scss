@@ -1,0 +1,160 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.Home {
+  height: 100vh;
+  width: 100%;
+}
+
+.HomeBack {
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.HomePage {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.HomeTitle {
+  height: 100%;
+  width: 100%;
+  @include flexCenter();
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.HomeTitleName {
+  font-size: 4em;
+  margin-top: -4em;
+}
+
+.HomeTitleDev {
+  font-size: 2.5em;
+  margin-top: -30px;
+}
+
+.HomeHr {
+  height: 1px;
+  width: 8em;
+  background-color: $orange;
+}
+
+.HomeCv {
+  height: 5em;
+  @include flexCenter();
+}
+
+
+.CvBtn {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.5em;
+  width: 277px;
+  height: 32px;
+  line-height: 60px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  font-size:15px;
+  letter-spacing: 0.050em;
+}
+
+.CvBtn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.CvBtn svg rect {
+  stroke: $orange;
+  stroke-width: 2;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.CvBtn span{
+  background: $light;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CvBtn:hover svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+
+}
+
+@media all and (max-width: 768px) {
+  .Home {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .HomePage {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .HomeTitleName {
+    font-size: 3.5em;
+  }
+  
+  .HomeTitleDev {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 572px) {
+  .HomeTitleName {
+    font-size: 2.4em;
+  }
+  
+  .HomeTitleDev {
+    font-size: 25px;
+    margin-top: -15px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .HomeTitleName {
+    font-size: 2em;
+  }
+  
+  .HomeTitleDev {
+    font-size: 20px;
+  }
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}

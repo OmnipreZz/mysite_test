@@ -1,0 +1,163 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.About {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+}
+
+.AboutPic {
+  grid-column: 1;
+  height: 100vh;
+  width: 100%;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.AboutInfo {
+  grid-column: 2;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 13vh 87vh;
+  overflow-y: none;
+}
+
+.AboutInfoTitle {
+  grid-row: 1;
+  height: 13vh;
+  @include flexCenter();
+}
+
+.AboutInfoTitle h1 {
+  color: $orange;
+  font-size: 45px;
+}
+
+.AboutInfoText {
+  grid-row: 2;
+  height: 87vh;
+  padding-right: 8em;
+  padding-left: 8em;
+}
+
+.AboutInfoText p {
+  color: $orange;
+}
+
+.AboutFormation {
+  margin-top: 4em;
+}
+
+.AboutFormation h2 {
+  font-size: 30px;
+  border: 1px solid $orange;
+  color: $orange;
+  padding: 0.2em;
+  margin-bottom: 1em;
+}
+
+.AboutFormationInfo {
+  padding-bottom: 2em;
+}
+
+.AboutFormationInfo a {
+ color: $orange;
+}
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+  .AboutInfoText {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media all and (max-width: 992px) {
+}
+
+@media all and (max-width: 768px) {
+  .About {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .AboutInfo {
+
+    height: 90vh;
+    grid-template-rows: 10vh 80vh;
+  }
+  
+  .AboutInfoTitle {
+    height: 10vh;
+  }
+  
+}
+
+@media all and (max-width: 572px) {
+  .About {
+    grid-template-columns: 1fr;
+    grid-template-rows: 35vh 55vh;
+    overflow-y: scroll;
+  }
+  
+  .AboutPic {
+    grid-column: 1;
+    grid-row: 1;
+    height: 35vh;
+  }
+  
+  .AboutInfo {
+    grid-column: 1;
+    grid-row: 2;
+    height: 55vh;
+    grid-template-rows: 15vh 30vh 10vh;
+  }
+
+  .AboutInfoTitle {
+    height: 15vh;
+  }
+  
+  .AboutInfoTitle h1 {
+    color: $orange;
+    font-size: 35px;
+  }
+  
+  .AboutInfoText {
+    height: 30vh;
+    margin-top: -1em;
+  }
+  
+  .AboutInfoText p {
+    color: $orange;
+  }
+
+  
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}
+
+@media all and (max-height: 900px) and (min-width: 768px) {
+  .AboutInfo {
+    overflow-y: scroll;
+  }
+
+  .AboutInfoText {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+}
+

@@ -1,0 +1,231 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.Skills {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 13vh 70vh 17vh;
+}
+
+.SkillsTitle {
+  grid-row: 1;
+  height: 13vh;
+  @include flexCenter();
+}
+.SkillsTitle h1 {
+  color: $orange;
+  font-size: 45px;
+}
+
+.SkillsCircularBar {
+  grid-row: 2;
+  height: 70vh;
+  padding: 2em;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+}
+
+.CircularBox01 {
+  grid-area: 1 / 1;
+  @include flexCenter();
+}
+
+.CircularBox02 {
+  grid-area: 1 / 2;
+  @include flexCenter();
+}
+
+.CircularBox03 {
+  grid-area: 1 / 3;
+  @include flexCenter();
+}
+
+.CircularBox04 {
+  grid-area: 1 / 4;
+  @include flexCenter();
+}
+
+.CircularBox05 {
+  grid-area: 1 / 5;
+  @include flexCenter();
+}
+
+.CircularBox06 {
+  grid-area: 1 / 6;
+  @include flexCenter();
+}
+
+.CircularBox07 {
+  grid-area: 2 / 1;
+  @include flexCenter();
+}
+
+.CircularBox08 {
+  grid-area: 2 / 2;
+  @include flexCenter();
+}
+
+.CircularBox09 {
+  grid-area: 2 / 3;
+  @include flexCenter();
+}
+
+.CircularBox10 {
+  grid-area: 2 / 4;
+  @include flexCenter();
+}
+
+.CircularBox11 {
+  grid-area: 2 / 5;
+  @include flexCenter();
+}
+
+.CircularBox12 {
+  grid-area: 2 / 6;
+  @include flexCenter();
+}
+
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+  .SkillsCircularBar {
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  }
+  
+  .CircularBox01 {
+    grid-area: 1 / 1;
+  }
+  
+  .CircularBox02 {
+    grid-area: 1 / 2;
+  }
+  
+  .CircularBox03 {
+    grid-area: 1 / 3;
+  }
+  
+  .CircularBox04 {
+    grid-area: 1 / 4;
+  }
+  
+  .CircularBox05 {
+    grid-area: 2 / 1;
+  }
+  
+  .CircularBox06 {
+    grid-area: 2 / 2;
+  }
+  
+  .CircularBox07 {
+    grid-area: 2 / 3;
+  }
+  
+  .CircularBox08 {
+    grid-area: 2 / 4;
+  }
+  
+  .CircularBox09 {
+    grid-area: 3 / 1;
+  }
+  
+  .CircularBox10 {
+    grid-area: 3 / 2;
+  }
+  
+  .CircularBox11 {
+    grid-area: 3 / 3;
+  }
+  
+  .CircularBox12 {
+    grid-area: 3 / 4;
+  }
+  
+}
+
+@media all and (max-width: 992px) {
+
+}
+
+@media all and (max-width: 768px) {
+  .Skills {
+    height: 90vh;
+    grid-template-rows: 10vh 70vh 10vh;
+  }
+
+  .SkillsTitle {
+    height: 10vh;
+  }
+
+  .SkillsCircularBar {
+    margin-top: -1em;
+  }
+  
+  
+}
+
+@media all and (max-width: 572px) {
+  .SkillsCircularBar {
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
+  
+  .CircularBox01 {
+    grid-area: 1 / 1;
+  }
+  
+  .CircularBox02 {
+    grid-area: 1 / 2;
+  }
+  
+  .CircularBox03 {
+    grid-area: 1 / 3;
+  }
+  
+  .CircularBox04 {
+    grid-area: 2 / 1;
+  }
+  
+  .CircularBox05 {
+    grid-area: 2 / 2;
+  }
+  
+  .CircularBox06 {
+    grid-area: 2 / 3;
+  }
+  
+  .CircularBox07 {
+    grid-area: 3 / 1;
+  }
+  
+  .CircularBox08 {
+    grid-area: 3 / 2;
+  }
+  
+  .CircularBox09 {
+    grid-area: 3 / 3;
+  }
+  
+  .CircularBox10 {
+    grid-area: 4 / 1;
+  }
+  
+  .CircularBox11 {
+    grid-area: 4 / 2;
+  }
+  
+  .CircularBox12 {
+    grid-area: 4/ 3;
+  }
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}

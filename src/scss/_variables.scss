@@ -1,0 +1,18 @@
+$light: #FFFFFF;
+$dark: #222a2d;
+$grey: #919191;
+$orange: #d39d30;
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'open';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+
+$lato: lato, sans-serif;
+$open: open, sans-serif;

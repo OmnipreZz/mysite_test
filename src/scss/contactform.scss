@@ -1,0 +1,101 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+.ContactForm {
+  height: 50vh;
+  width: 30vw;
+  @include flexCenter();
+  flex-direction: column;
+}
+
+.FormMail {
+  width: 30vw;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+.FormSubject {
+  width: 30vw;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+.FormTextarea {
+  height: 20vh;
+  width: 30vw;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+.ContactButtonDiv {
+  text-align: center;
+}
+
+.FormButton {
+  background-color: black;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  padding: 0.5em;
+  color: $orange;
+  cursor: pointer;
+  width: 10em;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.FormButton:hover {
+  background-color: $orange;
+  color: black;
+}
+
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+
+}
+
+@media all and (max-width: 768px) {
+  .ContactForm {
+    height: 57vh;
+    width: 100vw;
+  }
+
+  .FormMail {
+    width: 90vw;
+  }
+  
+  .FormSubject {
+    width: 90vw;
+  }
+  
+  .FormTextarea {
+    height: 20vh;
+    width: 90vw;
+  }
+  
+}
+
+@media all and (max-width: 572px) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}

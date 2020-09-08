@@ -1,0 +1,54 @@
+@import "./_mixins.scss";
+
+.Logo {
+  height: 4em;
+  width: 6em;
+}
+
+.Logo img {
+  height: 4em;
+  width: 6em;
+}
+
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+
+}
+
+@media all and (max-width: 768px) {
+  .Logo {
+    height: 10vh;
+    @include flexCenter();
+    width: 8em;
+  }
+
+  .Logo img {
+    height: 8vh;
+    width: 8em;
+  }
+}
+
+@media all and (max-width: 572px) {
+  .Logo {
+    width: 6em;
+  }
+
+  .Logo img {
+    width: 6em;
+  }
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}
