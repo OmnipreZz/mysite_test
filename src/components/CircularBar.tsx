@@ -59,206 +59,122 @@ class CircularBar extends Component<IProps, IState> {
     }
 
     clickGit = () => {
+      this.state.git > 0 ? 
+      this.setState({
+        git: 0,
+      }) : 
       this.setState({
         git: 100,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickNPM = () => {
+      this.state.npm > 0 ? 
+      this.setState({
+        npm: 0,
+      }) : 
       this.setState({
         npm: 100,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickHTML = () => {
+      this.state.html > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
+        html: 0,
+      }) : 
+      this.setState({
         html: 90,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickCSS = () => {
+      this.state.css > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
+        css: 0,
+      }) : 
+      this.setState({
         css: 80,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickSASS = () => {
+      this.state.sass > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
+        sass: 0,
+      }) : 
+      this.setState({
         sass: 55,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickJS = () => {
+      this.state.js > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
+        js: 0,
+      }) : 
+      this.setState({
         js: 75,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickTS = () => {
+      this.state.ts > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
+        ts: 0,
+      }) : 
+      this.setState({
         ts: 30,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickREACT = () => {
+      this.state.react > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
+        react: 0,
+      }) : 
+      this.setState({
         react: 65,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickVUE = () => {
+      this.state.vue > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
         vue: 45,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
+      }) : 
+      this.setState({
+        vue: 100,
       });
     }
-
+    
     clickLARAVEL = () => {
+      this.state.laravel > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
+        laravel: 0,
+      }) : 
+      this.setState({
         laravel: 60,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
-
+    
     clickBOOTSTRAP = () => {
+      this.state.bootstrap > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
+        bootstrap: 0,
+      }) : 
+      this.setState({
         bootstrap: 80,
-        wordpress: 0
       });
     }
-
+    
     clickWP = () => {
+      this.state.wordpress > 0 ? 
       this.setState({
-        npm: 0,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 50
+        wordpress: 50,
+      }) : 
+      this.setState({
+        wordpress: 100,
       });
     }
 
