@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-
 import '../scss/contactform.scss';
+
 
 interface IProps {
 
 }
+
 interface IState {
 
 }
+
 
 class ContactForm extends Component<IProps, IState> {
     constructor (props: IProps) {
@@ -17,7 +19,6 @@ class ContactForm extends Component<IProps, IState> {
            
         }
     }
-
     render () {
         return (
           <form className="ContactForm" action="https://formspree.io/geoffrey.frioli@gmail.com" method="POST">

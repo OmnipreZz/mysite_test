@@ -52,7 +52,6 @@
   @include flexCenter();
 }
 
-
 .CvBtn {
   position: relative;
   display: inline-block;
@@ -149,12 +148,4 @@
   .HomeTitleDev {
     font-size: 20px;
   }
-}
-
-@media screen and (orientation:portrait) {
-
-}
-
-@media screen and (orientation:landscape) {
-
 }

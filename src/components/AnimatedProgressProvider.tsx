@@ -1,6 +1,6 @@
-
-import React from 'react';
+import React, { Component } from 'react';
 import { Animate } from 'react-move';
+
 
 type Props = {
   duration: number;
@@ -14,7 +14,8 @@ type State = {
   isAnimated: boolean;
 };
 
-class AnimatedProgressProvider extends React.Component<Props, State> {
+
+class AnimatedProgressProvider extends Component<Props, State> {
   state = {
     isAnimated: false,
   };

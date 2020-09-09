@@ -69,6 +69,7 @@
  color: $orange;
 }
 
+
 /* /////////////////// */
 /* ////////// */
 /* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
@@ -140,14 +141,6 @@
   }
 
   
-}
-
-@media screen and (orientation:portrait) {
-
-}
-
-@media screen and (orientation:landscape) {
-
 }
 
 @media all and (max-height: 900px) and (min-width: 768px) {

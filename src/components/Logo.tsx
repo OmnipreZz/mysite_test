@@ -1,6 +1,6 @@
 import React from 'react';
-
 import '../scss/logo.scss';
+
 
 function About() {
   return (

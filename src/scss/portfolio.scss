@@ -9,7 +9,6 @@
   @include flexCenter();
 }
 
-
 .CardCloub {
   background-color: $dark;
   height: 50vh;
@@ -263,13 +262,5 @@
     max-height: 45vh;
     width: auto;
   }
-
-}
-
-@media screen and (orientation:portrait) {
-
-}
-
-@media screen and (orientation:landscape) {
 
 }

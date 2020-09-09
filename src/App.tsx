@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './App.scss';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -6,8 +8,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 
 const AnimatedSwitch = withRouter(({ location }) => (
   <TransitionGroup>
@@ -22,6 +23,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
     </CSSTransition>
   </TransitionGroup>
 ))
+
 
 function App() {
   return (

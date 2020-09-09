@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
 import '../scss/navbar.scss';
+
 
 interface IProps {
 
 }
+
 interface IState {
   mobileNav: boolean
 }
+
 
 class NavBurger extends Component<IProps, IState> {
     constructor (props: IProps) {
@@ -24,7 +26,6 @@ class NavBurger extends Component<IProps, IState> {
         mobileNav: !this.state.mobileNav
       })
     }
-
 
     render () {
 

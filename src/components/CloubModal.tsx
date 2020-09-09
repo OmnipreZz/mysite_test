@@ -6,9 +6,9 @@ const CloubModal = () => {
     return (
       <div className="ModalContent">
 
-      <div className="ModalButtonLeft">
-        <button className="ButtonArrow" onClick={() => setCount(count - 1)} disabled={count === 0}><i className="fas fa-angle-double-left"></i></button>
-      </div>
+        <div className="ModalButtonLeft">
+          <button className="ButtonArrow" onClick={() => setCount(count - 1)} disabled={count === 0}><i className="fas fa-angle-double-left"></i></button>
+        </div>
 
         <div className="ModalContentPic">
         <img className={count === 0 ? "ProjetPic picOpen" : "ProjetPic picClose"} src="/images/cloub/mediaMacbook.png" alt="" />
@@ -25,12 +25,11 @@ const CloubModal = () => {
         <img className={count === 11 ? "ProjetPic picOpen" : "ProjetPic picClose"} src="/images/cloub/iphone06-min.png" alt="" />
         </div>
 
-      
-
         <div className="ModalButtonRight">
           <button className="ButtonArrow" onClick={() => setCount(count + 1)} disabled={count === 11}><i className="fas fa-angle-double-right"></i></button>
         </div>
-        </div>
+
+      </div>
     );
   };
 

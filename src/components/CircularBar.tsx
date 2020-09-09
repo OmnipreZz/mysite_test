@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import { easeQuadInOut } from 'd3-ease';
-
+import AnimatedProgressProvider from './AnimatedProgressProvider';
 import '../scss/circularbar.scss';
 import '../scss/skills.scss';
-import AnimatedProgressProvider from './AnimatedProgressProvider';
 
 
 interface IProps {
 
 }
+
 interface IState {
 
 }
+
 
 class CircularBar extends Component<IProps, IState> {
     constructor (props: IProps) {

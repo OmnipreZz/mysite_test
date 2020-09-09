@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-
 import Bgvideo from './Bgvideo';
-
 import '../scss/home.scss';
+
 
 interface IProps {
 
 }
+
 interface IState {
   docPDF?: string;
 }
+
 
 class Home extends Component<IProps, IState> {
     constructor (props: IProps) {
@@ -19,7 +20,6 @@ class Home extends Component<IProps, IState> {
             docPDF: 'fichiers/cv_GFrioli.pdf'
         }
     }
-
     render () {
         return (
           <div className="Home">

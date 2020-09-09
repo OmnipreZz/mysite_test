@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
-
-import '../scss/navbar.scss';
-
 import Logo from './Logo';
 import NavBurger from './NavBurger';
+import '../scss/navbar.scss';
+
 
 function Navbar() {
   const location = useLocation();

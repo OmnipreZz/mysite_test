@@ -14,6 +14,7 @@
   height: 13vh;
   @include flexCenter();
 }
+
 .SkillsTitle h1 {
   color: $orange;
   font-size: 45px;
@@ -164,8 +165,6 @@
   .SkillsCircularBar {
     margin-top: -1em;
   }
-  
-  
 }
 
 @media all and (max-width: 572px) {
@@ -220,12 +219,4 @@
   .CircularBox12 {
     grid-area: 4/ 3;
   }
-}
-
-@media screen and (orientation:portrait) {
-
-}
-
-@media screen and (orientation:landscape) {
-
 }

@@ -12,7 +12,12 @@
 /build
 /public/images
 /public/videos
+/public/fichiers
+/public/image01.ico
+/public/image01.png
+/public/.htaccess
 /src/components/APIKey.tsx
+/src/images
 
 # misc
 .DS_Store

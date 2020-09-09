@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-
 import '../scss/bgvideo.scss';
+
 
 interface IProps {
 
 }
+
 interface IState {
   videoURL?: string;
 }
 
+
 class Bgvideo extends Component<IProps, IState> {
     constructor (props: IProps) {
         super(props);
-
         this.state = {
             videoURL: 'videos/Abstract.mp4'
         }
     }
-
     render () {
         return (
             <video className="background-video" autoPlay loop muted>

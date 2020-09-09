@@ -1,8 +1,7 @@
 import React from 'react';
-
 import Pic from '../images/DSC_0022-2.jpg';
-
 import '../scss/about.scss';
+
 
 function About() {
   return (
@@ -20,7 +19,6 @@ function About() {
             <p>J'ai ensuite effectué un stage de six mois au sein de l'entreprise Cloub Technologies, où j'ai pu continuer à me former et développer la partie front-end de leur application sur React.js.</p> 
             <p>Actuellement à la recherche d'un premier emploi orienté front-end, je suis motivé à continuer mon apprentissage en ce sens, tout en étant ouvert à toutes technologies nouvelles qui pourraient m'apporter plus d'expérience dans mon métier.</p>
             <p >Autodidacte, curieux et rigoureux, je peux facilement m'adapter à toutes les situations.</p>
-
             <div className="AboutFormation">
               <h2>Formation</h2>
               <div className="AboutFormationInfo">
@@ -32,8 +30,6 @@ function About() {
                 <p>Obtenu : Le 01 Avril 2019</p>
               </div>
             </div>
-            
-
           </div>
       </div>
     </div>

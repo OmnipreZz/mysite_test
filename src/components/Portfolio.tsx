@@ -1,8 +1,7 @@
 import React, { Component, useState } from 'react';
-
+import CloubModal from './CloubModal';
 import '../scss/portfolio.scss';
 
-import CloubModal from './CloubModal'
 
 interface IProps {
 
@@ -11,6 +10,7 @@ interface IProps {
 interface IState {
   modal?: boolean;
 }
+
 
 class Portfolio extends Component<IProps, IState> {
     constructor (props: IProps) {

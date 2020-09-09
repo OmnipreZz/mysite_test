@@ -1,9 +1,8 @@
 import React from 'react';
-
+import ContactForm from './ContactForm';
+import ContactMap from './ContactMap';
 import '../scss/contact.scss';
 
-import ContactForm from './ContactForm'
-import ContactMap from './ContactMap'
 
 function Contact() {
   return (
