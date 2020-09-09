@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
-import { APIKey } from './APIKey';
+import { APIKey } from '../data/APIKey';
 import { MapStyle } from './MapStyle';
 
 

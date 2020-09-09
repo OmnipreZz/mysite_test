@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Animate } from 'react-move';
 
-
 type Props = {
   duration: number;
   easingFunction: Function;
@@ -41,7 +40,6 @@ class AnimatedProgressProvider extends Component<Props, State> {
           timing: {
             duration: this.props.duration * 1000,
             ease: this.props.easingFunction,
-            delay: 1000
           },
         })}
       >

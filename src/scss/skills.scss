@@ -6,7 +6,7 @@
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 13vh 70vh 17vh;
+  grid-template-rows: 13vh 87vh;
 }
 
 .SkillsTitle {
@@ -20,203 +20,279 @@
   font-size: 45px;
 }
 
-.SkillsCircularBar {
+.SkillsContent {
   grid-row: 2;
-  height: 70vh;
-  padding: 2em;
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  @include flexCenter();
 }
 
-.CircularBox01 {
+.SkillsCircularBar {
+  padding: 2em;
+  height: 65vh;
+  width: 50vw;
+  background: $dark;
+  border: 1px solid $orange;
+  border-radius: 15px;
+  -webkit-box-shadow: inset -4px 4px 30px 10px black;
+  -moz-box-shadow: inset -4px 4px 30px 10px black;
+  box-shadow: inset -4px 4px 30px 10px black;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+}
+
+.CircularBox {
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 15px 3px black;
+  -moz-box-shadow: 4px 4px 15px 3px black;
+  box-shadow: 4px 4px 15px 3px black;
+  width: 7em;
+  height: 7em;
+  cursor: pointer;
+}
+
+.CircularBox:active,
+.CircularBox:focus {
+  height: 6.5em;
+  width: 6.5em;
+  -webkit-box-shadow: inset 4px 4px 15px 1px black;
+  -moz-box-shadow: inset 4px 4px 15px 1px black;
+  box-shadow: inset 4px 4px 15px 1px black;
+}
+
+.Skills01 {
   grid-area: 1 / 1;
   @include flexCenter();
 }
 
-.CircularBox02 {
+.circle01 {
+  border: 2px solid #df3c00;
+}
+
+.Skills02 {
   grid-area: 1 / 2;
   @include flexCenter();
 }
 
-.CircularBox03 {
+.circle02 {
+  border: 2px solid #cd1512;
+}
+
+.Skills03 {
   grid-area: 1 / 3;
   @include flexCenter();
 }
 
-.CircularBox04 {
+.circle03 {
+  border: 2px solid #f36000;
+}
+
+.Skills04 {
   grid-area: 1 / 4;
   @include flexCenter();
 }
 
-.CircularBox05 {
-  grid-area: 1 / 5;
-  @include flexCenter();
+.circle04 {
+  border: 2px solid #429ae1;
 }
 
-.CircularBox06 {
-  grid-area: 1 / 6;
-  @include flexCenter();
-}
-
-.CircularBox07 {
+.Skills05 {
   grid-area: 2 / 1;
   @include flexCenter();
 }
 
-.CircularBox08 {
+.circle05 {
+  border: 2px solid #cf4294;
+}
+
+.Skills06 {
   grid-area: 2 / 2;
   @include flexCenter();
 }
 
-.CircularBox09 {
+.circle06 {
+  border: 2px solid #e8f033;
+}
+
+.Skills07 {
   grid-area: 2 / 3;
   @include flexCenter();
 }
 
-.CircularBox10 {
+.circle07 {
+  border: 2px solid #3757d0;
+}
+
+.Skills08 {
   grid-area: 2 / 4;
   @include flexCenter();
 }
 
-.CircularBox11 {
-  grid-area: 2 / 5;
+.circle08 {
+  border: 2px solid #62d4ff;
+}
+
+.Skills09 {
+  grid-area: 3 / 1;
   @include flexCenter();
 }
 
-.CircularBox12 {
-  grid-area: 2 / 6;
+.circle09 {
+  border: 2px solid #1fc685;
+}
+
+.Skills10 {
+  grid-area: 3 / 2;
   @include flexCenter();
 }
 
+.circle10 {
+  border: 2px solid #ff3600;
+}
+
+.Skills11 {
+  grid-area: 3 / 3;
+  @include flexCenter();
+}
+
+.circle11 {
+  border: 2px solid #631683;
+}
+
+.Skills12 {
+  grid-area: 3 / 4;
+  @include flexCenter();
+}
+
+.circle12 {
+  border: 2px solid #2e6b9d;
+}
 
 /* /////////////////// */
 /* ////////// */
 /* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
 
 @media all and (max-width: 1200px) {
-  .SkillsCircularBar {
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-  }
-  
-  .CircularBox01 {
-    grid-area: 1 / 1;
-  }
-  
-  .CircularBox02 {
-    grid-area: 1 / 2;
-  }
-  
-  .CircularBox03 {
-    grid-area: 1 / 3;
-  }
-  
-  .CircularBox04 {
-    grid-area: 1 / 4;
-  }
-  
-  .CircularBox05 {
-    grid-area: 2 / 1;
-  }
-  
-  .CircularBox06 {
-    grid-area: 2 / 2;
-  }
-  
-  .CircularBox07 {
-    grid-area: 2 / 3;
-  }
-  
-  .CircularBox08 {
-    grid-area: 2 / 4;
-  }
-  
-  .CircularBox09 {
-    grid-area: 3 / 1;
-  }
-  
-  .CircularBox10 {
-    grid-area: 3 / 2;
-  }
-  
-  .CircularBox11 {
-    grid-area: 3 / 3;
-  }
-  
-  .CircularBox12 {
-    grid-area: 3 / 4;
-  }
+
   
 }
 
 @media all and (max-width: 992px) {
+  .SkillsCircularBar {
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
 
+  .Skills01 {
+    grid-area: 1 / 1;
+    @include flexCenter();
+  }
+
+  .Skills02 {
+    grid-area: 1 / 2;
+    @include flexCenter();
+  }
+
+  .Skills03 {
+    grid-area: 1 / 3;
+    @include flexCenter();
+  }
+
+  .Skills04 {
+    grid-area: 2 / 1;
+    @include flexCenter();
+  }
+
+  .Skills05 {
+    grid-area: 2 / 2;
+    @include flexCenter();
+  }
+
+  .Skills06 {
+    grid-area: 2 / 3;
+    @include flexCenter();
+  }
+
+  .Skills07 {
+    grid-area: 3 / 1;
+    @include flexCenter();
+  }
+  
+  .Skills08 {
+    grid-area: 3 / 2;
+    @include flexCenter();
+  }
+
+  .Skills09 {
+    grid-area: 3 / 3;
+    @include flexCenter();
+  }
+
+  .Skills10 {
+    grid-area: 4 / 1;
+    @include flexCenter();
+  }
+
+  .Skills11 {
+    grid-area: 4 / 2;
+    @include flexCenter();
+  }
+
+  .Skills12 {
+    grid-area: 4 / 3;
+    @include flexCenter();
+  }
 }
 
 @media all and (max-width: 768px) {
   .Skills {
     height: 90vh;
-    grid-template-rows: 10vh 70vh 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
   }
 
   .SkillsTitle {
     height: 10vh;
   }
 
-  .SkillsCircularBar {
-    margin-top: -1em;
+  .CircularBox {
+    width: 6em;
+    height: 6em;
+  }
+
+  .CircularBox:active,
+  .CircularBox:focus {
+    height: 5.5em;
+    width: 5.5em;
   }
 }
 
 @media all and (max-width: 572px) {
+  .CircularBox {
+    width: 4em;
+    height: 4em;
+  }
+
+  .CircularBox:active,
+  .CircularBox:focus {
+    height: 3.5em;
+    width: 3.5em;
+  }
+
   .SkillsCircularBar {
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    padding: 2em;
+    height: 65vh;
+    width: 65vw;
   }
-  
-  .CircularBox01 {
-    grid-area: 1 / 1;
+
+}
+
+@media all and (max-height: 900px) and (min-width: 572px) {
+
+  .CircularBox {
+    width: 5.5em;
+    height: 5.5em;
   }
-  
-  .CircularBox02 {
-    grid-area: 1 / 2;
-  }
-  
-  .CircularBox03 {
-    grid-area: 1 / 3;
-  }
-  
-  .CircularBox04 {
-    grid-area: 2 / 1;
-  }
-  
-  .CircularBox05 {
-    grid-area: 2 / 2;
-  }
-  
-  .CircularBox06 {
-    grid-area: 2 / 3;
-  }
-  
-  .CircularBox07 {
-    grid-area: 3 / 1;
-  }
-  
-  .CircularBox08 {
-    grid-area: 3 / 2;
-  }
-  
-  .CircularBox09 {
-    grid-area: 3 / 3;
-  }
-  
-  .CircularBox10 {
-    grid-area: 4 / 1;
-  }
-  
-  .CircularBox11 {
-    grid-area: 4 / 2;
-  }
-  
-  .CircularBox12 {
-    grid-area: 4/ 3;
+
+  .CircularBox:active,
+  .CircularBox:focus {
+    height: 5em;
+    width: 5em;
   }
 }

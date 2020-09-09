@@ -18,6 +18,7 @@
 /public/.htaccess
 /src/components/APIKey.tsx
 /src/images
+/src/data/APIKey.js
 
 # misc
 .DS_Store

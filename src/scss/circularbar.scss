@@ -3,44 +3,87 @@
 
 
  .CircularProgressbar {
-  width: 80%;
+  width: 100%;
   vertical-align: middle;
+  background: rgb(34,42,45);
+background: linear-gradient(0deg, rgba(34,42,45,1) 0%, rgba(72,83,90,1) 100%);
+  border-radius: 50%;
+  -webkit-box-shadow: -3px -3px 10px 3px #48535a;
+  -moz-box-shadow: -3px -3px 10px 3px #48535a;
+  box-shadow: -3px -3px 10px 3px #48535a;
+}
+
+
+.ImgLogo {
+  width: 60px;
+}
+
+.ImgLogo:active,
+.ImgLogo:focus {
+  width: 50px;
 }
 
 .CircularProgressbar .CircularProgressbar-path {
   stroke: $orange;
   stroke-linecap: round;
-  transition: stroke-dashoffset 0.5s ease 0s;
+  // transition: stroke-dashoffset 0s ease 0s;
 }
 
 .CircularProgressbar .CircularProgressbar-trail {
-  stroke: white;
+  stroke: black;
   stroke-linecap: round;
 }
 
 .CircularProgressbar .CircularProgressbar-text {
   fill: $orange;
   font-size: 1em;
-  dominant-baseline: middle;
+  // dominant-baseline: middle;
   text-anchor: middle;
 }
 
-.CircularProgressbar .CircularProgressbar-background {
-  fill: #d6d6d6;
+/* /////////////////// */
+/* ////////// */
+/* ////////////////////////////////--Responsive @MEDIA--//////////////////////////////// */
+
+@media all and (max-width: 1200px) {
+  
 }
 
-.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
-  fill: #3e98c7;
+@media all and (max-width: 992px) {
+
 }
 
-.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
-  fill: #fff;
+@media all and (max-width: 768px) {
+  .ImgLogo {
+    width: 50px;
+  }
+  
+  .ImgLogo:active,
+  .ImgLogo:focus {
+    width: 40px;
+  }
 }
 
-.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
-  stroke: #fff;
+@media all and (max-width: 572px) {
+
+  .ImgLogo {
+    width: 30px;
+  }
+  
+  .ImgLogo:active,
+  .ImgLogo:focus {
+    width: 20px;
+  }
+
 }
 
-.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
-  stroke: transparent;
+@media all and (max-height: 900px) and (min-width: 572px) {
+  .ImgLogo {
+    width: 45px;
+  }
+  
+  .ImgLogo:active,
+  .ImgLogo:focus {
+    width: 35px;
+  }
 }

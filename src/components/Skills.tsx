@@ -9,7 +9,10 @@ function Skills() {
       <div className="SkillsTitle">
         <h1>SKILLS</h1>
       </div>
-      <CircularBar />
+      <div className="SkillsContent">
+        <CircularBar />
+      </div>
+     
     </div>
   );
 }
