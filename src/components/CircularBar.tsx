@@ -141,10 +141,10 @@ class CircularBar extends Component<IProps, IState> {
     clickVUE = () => {
       this.state.vue > 0 ? 
       this.setState({
-        vue: 45,
+        vue: 0,
       }) : 
       this.setState({
-        vue: 100,
+        vue: 45,
       });
     }
     
@@ -171,10 +171,10 @@ class CircularBar extends Component<IProps, IState> {
     clickWP = () => {
       this.state.wordpress > 0 ? 
       this.setState({
-        wordpress: 50,
+        wordpress: 0,
       }) : 
       this.setState({
-        wordpress: 100,
+        wordpress: 50,
       });
     }
 
