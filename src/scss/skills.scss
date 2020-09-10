@@ -39,7 +39,7 @@
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
 }
 
-.CircularBox {
+.CircularBoxClick {
   border-radius: 50%;
   -webkit-box-shadow: 4px 4px 15px 3px black;
   -moz-box-shadow: 4px 4px 15px 3px black;
@@ -49,10 +49,27 @@
   cursor: pointer;
 }
 
+.CircularBox {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgb(34,42,45);
+  background: linear-gradient(0deg, rgba(34,42,45,1) 0%, rgba(72,83,90,1) 100%);
+}
+
+.CircularBoxClick:active,
+.CircularBoxClick:focus {
+
+}
+
 .CircularBox:active,
 .CircularBox:focus {
-  height: 6.5em;
-  width: 6.5em;
+  .ImgLogo {
+    width: 50px;
+  }
+  // height: 6.5em;
+  // width: 6.5em;
   -webkit-box-shadow: inset 4px 4px 15px 1px black;
   -moz-box-shadow: inset 4px 4px 15px 1px black;
   box-shadow: inset 4px 4px 15px 1px black;
@@ -177,7 +194,17 @@
 
 @media all and (max-width: 992px) {
   .SkillsCircularBar {
+    padding: 1em;
+    height: 60vh;
+    width: 80vw;
+  }
+  
+}
+
+@media all and (max-width: 768px) {
+  .SkillsCircularBar {
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    height: 70vh;
   }
 
   .Skills01 {
@@ -239,9 +266,7 @@
     grid-area: 4 / 3;
     @include flexCenter();
   }
-}
 
-@media all and (max-width: 768px) {
   .Skills {
     height: 90vh;
     grid-template-rows: 10vh 80vh 10vh;
@@ -251,48 +276,67 @@
     height: 10vh;
   }
 
-  .CircularBox {
+  .CircularBoxClick {
     width: 6em;
     height: 6em;
   }
 
+  // .CircularBox:active,
+  // .CircularBox:focus {
+  //   height: 5.5em;
+  //   width: 5.5em;
+  // }
+
   .CircularBox:active,
   .CircularBox:focus {
-    height: 5.5em;
-    width: 5.5em;
+    .ImgLogo {
+      width: 40px;
+    }
   }
 }
 
 @media all and (max-width: 572px) {
-  .CircularBox {
+  .SkillsContent {
+    align-items: flex-start;
+  }
+
+  .CircularBoxClick {
     width: 4em;
     height: 4em;
   }
 
+  // .CircularBox:active,
+  // .CircularBox:focus {
+  //   height: 3.5em;
+  //   width: 3.5em;
+  // }
+
   .CircularBox:active,
   .CircularBox:focus {
-    height: 3.5em;
-    width: 3.5em;
-  }
-
-  .SkillsCircularBar {
-    padding: 2em;
-    height: 65vh;
-    width: 65vw;
+    .ImgLogo {
+      width: 20px;
+    }
   }
 
 }
 
 @media all and (max-height: 900px) and (min-width: 572px) {
 
-  .CircularBox {
+  .CircularBoxClick {
     width: 5.5em;
     height: 5.5em;
   }
 
+  // .CircularBox:active,
+  // .CircularBox:focus {
+  //   height: 5em;
+  //   width: 5em;
+  // }
+
   .CircularBox:active,
   .CircularBox:focus {
-    height: 5em;
-    width: 5em;
+    .ImgLogo {
+      width: 35px;
+    }
   }
 }

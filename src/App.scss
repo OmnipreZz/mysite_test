@@ -25,6 +25,10 @@ a {
   outline:0 !important; 
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 input {
 background-color: black;
 color: $orange;

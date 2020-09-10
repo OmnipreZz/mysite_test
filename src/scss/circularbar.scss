@@ -5,22 +5,14 @@
  .CircularProgressbar {
   width: 100%;
   vertical-align: middle;
-  background: rgb(34,42,45);
-background: linear-gradient(0deg, rgba(34,42,45,1) 0%, rgba(72,83,90,1) 100%);
   border-radius: 50%;
   -webkit-box-shadow: -3px -3px 10px 3px #48535a;
   -moz-box-shadow: -3px -3px 10px 3px #48535a;
   box-shadow: -3px -3px 10px 3px #48535a;
 }
 
-
 .ImgLogo {
   width: 60px;
-}
-
-.ImgLogo:active,
-.ImgLogo:focus {
-  width: 50px;
 }
 
 .CircularProgressbar .CircularProgressbar-path {
@@ -57,11 +49,6 @@ background: linear-gradient(0deg, rgba(34,42,45,1) 0%, rgba(72,83,90,1) 100%);
   .ImgLogo {
     width: 50px;
   }
-  
-  .ImgLogo:active,
-  .ImgLogo:focus {
-    width: 40px;
-  }
 }
 
 @media all and (max-width: 572px) {
@@ -69,21 +56,10 @@ background: linear-gradient(0deg, rgba(34,42,45,1) 0%, rgba(72,83,90,1) 100%);
   .ImgLogo {
     width: 30px;
   }
-  
-  .ImgLogo:active,
-  .ImgLogo:focus {
-    width: 20px;
-  }
-
 }
 
 @media all and (max-height: 900px) and (min-width: 572px) {
   .ImgLogo {
     width: 45px;
-  }
-  
-  .ImgLogo:active,
-  .ImgLogo:focus {
-    width: 35px;
   }
 }
