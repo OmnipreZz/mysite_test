@@ -70,9 +70,15 @@
   }
   // height: 6.5em;
   // width: 6.5em;
-  -webkit-box-shadow: inset 4px 4px 15px 1px black;
-  -moz-box-shadow: inset 4px 4px 15px 1px black;
-  box-shadow: inset 4px 4px 15px 1px black;
+  -webkit-box-shadow: inset 0px 0px 15px 5px black;
+  -moz-box-shadow: inset 0px 0px 15px 5px black;
+  box-shadow: inset 0px 0px 15px 5px black;
+}
+
+.svgColor {
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .Skills01 {

@@ -65,6 +65,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         git: 100,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -75,6 +86,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         npm: 100,
+        git: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -85,6 +107,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         html: 90,
+        git: 0,
+        npm: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -95,6 +128,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         css: 80,
+        git: 0,
+        npm: 0,
+        html: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -105,6 +149,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         sass: 55,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -115,6 +170,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         js: 75,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -125,6 +191,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         ts: 30,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -135,6 +212,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         react: 65,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -145,6 +233,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         vue: 45,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        laravel: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -155,6 +254,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         laravel: 60,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        bootstrap: 0,
+        wordpress: 0
       });
     }
     
@@ -165,6 +275,17 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         bootstrap: 80,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        wordpress: 0
       });
     }
     
@@ -175,16 +296,32 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         wordpress: 50,
+        git: 0,
+        npm: 0,
+        html: 0,
+        css: 0,
+        sass: 0,
+        js: 0,
+        ts: 0,
+        react: 0,
+        vue: 0,
+        laravel: 0,
+        bootstrap: 0
       });
     }
 
    
-
     render () {
         return (
           <div className="SkillsCircularBar">
 
             <div className="Skills01">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="git-gradient" x2="1" y2="1">
+                  <stop offset="50%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#df3c00" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickGit}>
                 <div className="CircularBox circle01">
                   <AnimatedProgressProvider
@@ -199,7 +336,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#df3c00",
+                            pathColor: "url(#git-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -217,6 +354,12 @@ class CircularBar extends Component<IProps, IState> {
             </div>
             
             <div className="Skills02">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="npm-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#cd1512" />
+                </linearGradient>
+              </svg>
             <div className="CircularBoxClick"  onClick={this.clickNPM}>
                 <div className="CircularBox circle02">
                   <AnimatedProgressProvider
@@ -231,7 +374,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#cd1512",
+                            pathColor: "url(#npm-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -250,6 +393,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills03">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="html-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#f36000" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickHTML}>
                 <div className="CircularBox circle03">
                   <AnimatedProgressProvider
@@ -264,7 +413,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#f36000",
+                            pathColor: "url(#html-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -283,6 +432,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills04">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="css-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#429ae1" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickCSS}>
                 <div className="CircularBox circle04">
                   <AnimatedProgressProvider
@@ -297,7 +452,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#429ae1",
+                            pathColor: "url(#css-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -316,6 +471,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills05">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="sass-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#cf4294" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickSASS}>
                 <div className="CircularBox circle05">
                   <AnimatedProgressProvider
@@ -330,7 +491,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#cf4294",
+                            pathColor: "url(#sass-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -349,6 +510,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills06">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="js-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#e8f033" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickJS}>
                 <div className="CircularBox circle06">
                   <AnimatedProgressProvider
@@ -363,7 +530,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#e8f033",
+                            pathColor: "url(#js-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -382,6 +549,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills07">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="ts-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#3757d0" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickTS}>
                 <div className="CircularBox circle07">
                   <AnimatedProgressProvider
@@ -396,7 +569,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#3757d0",
+                            pathColor: "url(#ts-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -415,6 +588,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills08">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="react-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#62d4ff" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickREACT}>
                 <div className="CircularBox circle08">
                   <AnimatedProgressProvider
@@ -429,7 +608,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#62d4ff",
+                            pathColor: "url(#react-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -448,6 +627,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills09">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="vue-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#1fc685" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickVUE}>
                 <div className="CircularBox circle09">
                   <AnimatedProgressProvider
@@ -462,7 +647,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#1fc685",
+                            pathColor: "url(#vue-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -481,6 +666,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills10">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="laravel-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#ff3600" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickLARAVEL}>
                 <div className="CircularBox circle10">
                   <AnimatedProgressProvider
@@ -495,7 +686,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#ff3600",
+                            pathColor: "url(#laravel-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -514,6 +705,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills11">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="bs-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#631683" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickBOOTSTRAP}>
                 <div className="CircularBox circle11">
                   <AnimatedProgressProvider
@@ -528,7 +725,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#631683",
+                            pathColor: "url(#bs-gradient)"
                           })}
                           strokeWidth={5}
                         >
@@ -547,6 +744,12 @@ class CircularBar extends Component<IProps, IState> {
             
 
             <div className="Skills12">
+              <svg className="svgColor" aria-hidden="true" focusable="false">
+                <linearGradient id="wp-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="100%" stop-color="#2e6b9d" />
+                </linearGradient>
+              </svg>
               <div className="CircularBoxClick"  onClick={this.clickWP}>
                 <div className="CircularBox circle12">
                   <AnimatedProgressProvider
@@ -561,7 +764,7 @@ class CircularBar extends Component<IProps, IState> {
                           value={value}
                           styles={buildStyles({
                             strokeLinecap: "butt",
-                            pathColor: "#2e6b9d",
+                            pathColor: "url(#wp-gradient)"
                           })}
                           strokeWidth={5}
                         >
