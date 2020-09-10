@@ -318,6 +318,7 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills01">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="git-gradient" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#df3c00" />
                   <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#df3c00" />
                 </linearGradient>
@@ -356,7 +357,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills02">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="npm-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#cd1512" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#cd1512" />
                 </linearGradient>
               </svg>
@@ -395,7 +397,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills03">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="html-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#f36000" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#f36000" />
                 </linearGradient>
               </svg>
@@ -434,7 +437,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills04">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="css-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#429ae1" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#429ae1" />
                 </linearGradient>
               </svg>
@@ -473,7 +477,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills05">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="sass-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#cf4294" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#cf4294" />
                 </linearGradient>
               </svg>
@@ -512,7 +517,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills06">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="js-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#e8f033" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#e8f033" />
                 </linearGradient>
               </svg>
@@ -551,7 +557,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills07">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="ts-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#3757d0" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#3757d0" />
                 </linearGradient>
               </svg>
@@ -590,7 +597,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills08">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="react-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#62d4ff" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#62d4ff" />
                 </linearGradient>
               </svg>
@@ -629,7 +637,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills09">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="vue-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#1fc685" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#1fc685" />
                 </linearGradient>
               </svg>
@@ -668,7 +677,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills10">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="laravel-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#ff3600" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#ff3600" />
                 </linearGradient>
               </svg>
@@ -707,7 +717,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills11">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="bs-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#631683" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#631683" />
                 </linearGradient>
               </svg>
@@ -746,7 +757,8 @@ class CircularBar extends Component<IProps, IState> {
             <div className="Skills12">
               <svg className="svgColor" aria-hidden="true" focusable="false">
                 <linearGradient id="wp-gradient" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#919191" />
+                  <stop offset="0%" stop-color="#2e6b9d" />
+                  <stop offset="50%" stop-color="#919191" />
                   <stop offset="100%" stop-color="#2e6b9d" />
                 </linearGradient>
               </svg>
