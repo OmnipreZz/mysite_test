@@ -65,17 +65,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         git: 100,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -86,17 +75,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         npm: 100,
-        git: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -107,17 +85,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         html: 90,
-        git: 0,
-        npm: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -128,17 +95,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         css: 80,
-        git: 0,
-        npm: 0,
-        html: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -149,17 +105,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         sass: 55,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -170,17 +115,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         js: 75,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -191,17 +125,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         ts: 30,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -212,17 +135,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         react: 65,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -233,17 +145,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         vue: 45,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        laravel: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -254,17 +155,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         laravel: 60,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        bootstrap: 0,
-        wordpress: 0
       });
     }
     
@@ -275,17 +165,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         bootstrap: 80,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        wordpress: 0
       });
     }
     
@@ -296,17 +175,6 @@ class CircularBar extends Component<IProps, IState> {
       }) : 
       this.setState({
         wordpress: 50,
-        git: 0,
-        npm: 0,
-        html: 0,
-        css: 0,
-        sass: 0,
-        js: 0,
-        ts: 0,
-        react: 0,
-        vue: 0,
-        laravel: 0,
-        bootstrap: 0
       });
     }
 
