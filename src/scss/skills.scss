@@ -5,20 +5,13 @@
   background-color: black;
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: 13vh 87vh;
-}
-
-.SkillsTitle {
-  grid-row: 1;
-  height: 13vh;
   @include flexCenter();
 }
 
-.SkillsTitle h1 {
-  color: $orange;
-  font-size: 45px;
+.SkillsTitle {
+ font-size: 4.5em;
 }
+
 
 .SkillsContent {
   grid-row: 2;
@@ -30,11 +23,28 @@
   height: 65vh;
   width: 50vw;
   background: $dark;
-  border: 1px solid $orange;
+  border: 2px solid $dark;
   border-radius: 15px;
   -webkit-box-shadow: inset -4px 4px 30px 10px black;
   -moz-box-shadow: inset -4px 4px 30px 10px black;
   box-shadow: inset -4px 4px 30px 10px black;
+ 
+}
+
+.SkillsCircularBarTitle {
+  height: 10vh;
+  width: 50vw;
+  background-color: $orange;
+  @include flexCenter();
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 2px 10px 5px black;
+  -moz-box-shadow: inset 0px 2px 10px 5px black;
+  box-shadow: inset 0px 2px 10px 5px black;
+}
+
+.SkillsCircularBarContent {
+  height: 55vh;
+  width: 50vw;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
 }

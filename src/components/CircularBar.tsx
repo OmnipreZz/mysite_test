@@ -24,6 +24,7 @@ interface IState {
   laravel: number
   bootstrap: number
   wordpress: number
+  title: string
 }
 
 
@@ -43,7 +44,8 @@ class CircularBar extends Component<IProps, IState> {
           vue: 0,
           laravel: 0,
           bootstrap: 0,
-          wordpress: 0
+          wordpress: 0,
+          title: "SKILLS"
         }
     }
 
@@ -56,6 +58,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             git: value,
+            title: name
           });
         break;
         case 'NPM':
@@ -65,6 +68,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             npm: value,
+            title: name
           });
         break;
         case 'HTML':
@@ -74,6 +78,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             html: value,
+            title: name
           });
         break;
         case 'CSS':
@@ -83,6 +88,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             css: value,
+            title: name
           });
         break;
         case 'SASS':
@@ -92,6 +98,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             sass: value,
+            title: name
           });
         break;
         case 'JS':
@@ -101,6 +108,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             js: value,
+            title: name
           });
         break;
         case 'TS':
@@ -110,6 +118,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             ts: value,
+            title: name
           });
         break;
         case 'React':
@@ -119,6 +128,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             react: value,
+            title: name
           });
         break;
         case 'Vue':
@@ -128,6 +138,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             vue: value,
+            title: name
           });
         break;
         case 'Laravel':
@@ -137,6 +148,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             laravel: value,
+            title: name
           });
         break;
         case 'Bootstrap':
@@ -146,6 +158,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             bootstrap: value,
+            title: name
           });
         break;
         case 'Wordpress':
@@ -155,6 +168,7 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             wordpress: value,
+            title: name
           });
         break;
         default:
@@ -165,60 +179,64 @@ class CircularBar extends Component<IProps, IState> {
     render () {
         return (
           <div className="SkillsCircularBar">
-          {data.skills && data.skills.length && (
-            data.skills.map( (skills, index) => {
-              return <div className={skills.class} key={index}>
-                      <svg className="svgColor" aria-hidden="true" focusable="false">
-                        <linearGradient id={skills.gradient} x2="1" y2="1">
-                          <stop offset="0%" stopColor={skills.color} />
-                          <stop offset="50%" stopColor="#919191" />
-                          <stop offset="100%" stopColor={skills.color} />
-                        </linearGradient>
-                      </svg>
-                      <div className="CircularBoxClick"  onClick={() => {this.handleClick(skills.value, skills.name)}}>
-                        <div className={skills.circle}>
-                          <AnimatedProgressProvider
-                            valueStart={0}
-                            valueEnd={skills.name === "Git" ? this.state.git :
-                                      skills.name === "NPM" ? this.state.npm : 
-                                      skills.name === "HTML" ? this.state.html : 
-                                      skills.name === "CSS" ? this.state.css : 
-                                      skills.name === "SASS" ? this.state.sass :
-                                      skills.name === "JS" ? this.state.js :
-                                      skills.name === "TS" ? this.state.ts :
-                                      skills.name === "React" ? this.state.react :
-                                      skills.name === "Vue" ? this.state.vue :
-                                      skills.name === "Laravel" ? this.state.laravel :
-                                      skills.name === "Bootstrap" ? this.state.bootstrap :
-                                      skills.name === "Wordpress" ? this.state.wordpress : 0 }
-                            duration={1}
-                            easingFunction={easeQuadInOut}
-                          >          
-                            {(value) => {
-                              return (
-                                <CircularProgressbarWithChildren
-                                  value={value}
-                                  styles={buildStyles({
-                                    strokeLinecap: "butt",
-                                    pathColor: `url(#${skills.gradient})`
-                                  })}
-                                  strokeWidth={5}
-                                >
-                                  <img
-                                    className="ImgLogo"
-                                    src={skills.img}
-                                    alt={skills.name}
-                                  />
-                                </CircularProgressbarWithChildren>
-                              );
-                            }}
-                          </AnimatedProgressProvider>
-                        </div>
-                      </div>   
-                    </div>      
-              })
-            )}
-
+            <div className="SkillsCircularBarTitle">
+              <h2 className="SkillsTitle">{this.state.title}</h2>
+            </div>
+            <div className="SkillsCircularBarContent">
+            {data.skills && data.skills.length && (
+              data.skills.map( (skills, index) => {
+                return <div className={skills.class} key={index}>
+                        <svg className="svgColor" aria-hidden="true" focusable="false">
+                          <linearGradient id={skills.gradient} x2="1" y2="1">
+                            <stop offset="0%" stopColor={skills.color} />
+                            <stop offset="50%" stopColor="#919191" />
+                            <stop offset="100%" stopColor={skills.color} />
+                          </linearGradient>
+                        </svg>
+                        <div className="CircularBoxClick"  onClick={() => {this.handleClick(skills.value, skills.name)}}>
+                          <div className={skills.circle}>
+                            <AnimatedProgressProvider
+                              valueStart={0}
+                              valueEnd={skills.name === "Git" ? this.state.git :
+                                        skills.name === "NPM" ? this.state.npm : 
+                                        skills.name === "HTML" ? this.state.html : 
+                                        skills.name === "CSS" ? this.state.css : 
+                                        skills.name === "SASS" ? this.state.sass :
+                                        skills.name === "JS" ? this.state.js :
+                                        skills.name === "TS" ? this.state.ts :
+                                        skills.name === "React" ? this.state.react :
+                                        skills.name === "Vue" ? this.state.vue :
+                                        skills.name === "Laravel" ? this.state.laravel :
+                                        skills.name === "Bootstrap" ? this.state.bootstrap :
+                                        skills.name === "Wordpress" ? this.state.wordpress : 0 }
+                              duration={1}
+                              easingFunction={easeQuadInOut}
+                            >          
+                              {(value) => {
+                                return (
+                                  <CircularProgressbarWithChildren
+                                    value={value}
+                                    styles={buildStyles({
+                                      strokeLinecap: "butt",
+                                      pathColor: `url(#${skills.gradient})`
+                                    })}
+                                    strokeWidth={5}
+                                  >
+                                    <img
+                                      className="ImgLogo"
+                                      src={skills.img}
+                                      alt={skills.name}
+                                    />
+                                  </CircularProgressbarWithChildren>
+                                );
+                              }}
+                            </AnimatedProgressProvider>
+                          </div>
+                        </div>   
+                      </div>      
+                })
+              )}
+            </div>
           </div>
         )
     }
