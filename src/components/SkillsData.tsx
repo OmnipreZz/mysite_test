@@ -1,7 +1,7 @@
 const data = {
   "skills": [
   {
-    "name": "Git",
+    "name": "GIT",
     "class": "Skills01",
     "color": "#df3c00",
     "img": "images/git1.png",
@@ -46,7 +46,7 @@ const data = {
     "gradient": "sass-gradient"
   },
   {
-    "name": "JS",
+    "name": "JAVASCRIPT",
     "class": "Skills06",
     "color": "#e8f033",
     "img": "images/js.png",
@@ -55,7 +55,7 @@ const data = {
     "gradient": "js-gradient"
   },
   {
-    "name": "TS",
+    "name": "TYPESCRIPT",
     "class": "Skills07",
     "color": "#3757d0",
     "img": "images/ts.png",
@@ -64,7 +64,7 @@ const data = {
     "gradient": "ts-gradient"
   },
   {
-    "name": "React",
+    "name": "REACT.JS",
     "class": "Skills08",
     "color": "#62d4ff",
     "img": "images/react.png",
@@ -73,7 +73,7 @@ const data = {
     "gradient": "react-gradient"
   },
   {
-    "name": "Vue",
+    "name": "VUE.JS",
     "class": "Skills09",
     "color": "#1fc685",
     "img": "images/vue.png",
@@ -82,7 +82,7 @@ const data = {
     "gradient": "vue-gradient"
   },
   {
-    "name": "Laravel",
+    "name": "LARAVEL",
     "class": "Skills10",
     "color": "#ff3600",
     "img": "images/laravel.png",
@@ -91,7 +91,7 @@ const data = {
     "gradient": "laravel-gradient"
   },
   {
-    "name": "Bootstrap",
+    "name": "BOOTSTRAP",
     "class": "Skills11",
     "color": "#631683",
     "img": "images/bootstrap.png",
@@ -100,7 +100,7 @@ const data = {
     "gradient": "bootstrap-gradient"
   },
   {
-    "name": "Wordpress",
+    "name": "WORDPRESS",
     "class": "Skills12",
     "color": "#2e6b9d",
     "img": "images/wordpress.png",

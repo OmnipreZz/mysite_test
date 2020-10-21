@@ -6,10 +6,7 @@ import '../scss/skills.scss';
 function Skills() {
   return (
     <div className="Skills">
-
-        <CircularBar />
-
-     
+        <CircularBar />  
     </div>
   );
 }

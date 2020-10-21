@@ -51,14 +51,25 @@ class CircularBar extends Component<IProps, IState> {
 
     handleClick = (value:number, name:string) => {
       switch (name) {
-        case "Git":
+        case "GIT":
           this.state.git > 0 ? 
           this.setState({
             git: 0,
           }) : 
           this.setState({
             git: value,
-            title: name
+            title: name,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
         case 'NPM':
@@ -68,7 +79,18 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             npm: value,
-            title: name
+            title: name,
+            git: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
         case 'HTML':
@@ -78,7 +100,18 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             html: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
         case 'CSS':
@@ -88,7 +121,18 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             css: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
         case 'SASS':
@@ -98,77 +142,165 @@ class CircularBar extends Component<IProps, IState> {
           }) : 
           this.setState({
             sass: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'JS':
+        case 'JAVASCRIPT':
           this.state.js > 0 ? 
           this.setState({
             js: 0,
           }) : 
           this.setState({
             js: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'TS':
+        case 'TYPESCRIPT':
           this.state.ts > 0 ? 
           this.setState({
             ts: 0,
           }) : 
           this.setState({
             ts: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'React':
+        case 'REACT.JS':
           this.state.react > 0 ? 
           this.setState({
             react: 0,
           }) : 
           this.setState({
             react: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'Vue':
+        case 'VUE.JS':
           this.state.vue > 0 ? 
           this.setState({
             vue: 0,
           }) : 
           this.setState({
             vue: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            laravel: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'Laravel':
+        case 'LARAVEL':
           this.state.laravel > 0 ? 
           this.setState({
             laravel: 0,
           }) : 
           this.setState({
             laravel: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            bootstrap: 0,
+            wordpress: 0,
           });
         break;
-        case 'Bootstrap':
+        case 'BOOTSTRAP':
           this.state.bootstrap > 0 ? 
           this.setState({
             bootstrap: 0,
           }) : 
           this.setState({
             bootstrap: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            wordpress: 0,
           });
         break;
-        case 'Wordpress':
+        case 'WORDPRESS':
           this.state.wordpress > 0 ? 
           this.setState({
             wordpress: 0,
           }) : 
           this.setState({
             wordpress: value,
-            title: name
+            title: name,
+            git: 0,
+            npm: 0,
+            html: 0,
+            css: 0,
+            sass: 0,
+            js: 0,
+            ts: 0,
+            react: 0,
+            vue: 0,
+            laravel: 0,
+            bootstrap: 0,
           });
         break;
         default:
@@ -197,18 +329,18 @@ class CircularBar extends Component<IProps, IState> {
                           <div className={skills.circle}>
                             <AnimatedProgressProvider
                               valueStart={0}
-                              valueEnd={skills.name === "Git" ? this.state.git :
+                              valueEnd={skills.name === "GIT" ? this.state.git :
                                         skills.name === "NPM" ? this.state.npm : 
                                         skills.name === "HTML" ? this.state.html : 
                                         skills.name === "CSS" ? this.state.css : 
                                         skills.name === "SASS" ? this.state.sass :
-                                        skills.name === "JS" ? this.state.js :
-                                        skills.name === "TS" ? this.state.ts :
-                                        skills.name === "React" ? this.state.react :
-                                        skills.name === "Vue" ? this.state.vue :
-                                        skills.name === "Laravel" ? this.state.laravel :
-                                        skills.name === "Bootstrap" ? this.state.bootstrap :
-                                        skills.name === "Wordpress" ? this.state.wordpress : 0 }
+                                        skills.name === "JAVASCRIPT" ? this.state.js :
+                                        skills.name === "TYPESCRIPT" ? this.state.ts :
+                                        skills.name === "REACT.JS" ? this.state.react :
+                                        skills.name === "VUE.JS" ? this.state.vue :
+                                        skills.name === "LARAVEL" ? this.state.laravel :
+                                        skills.name === "BOOTSTRAP" ? this.state.bootstrap :
+                                        skills.name === "WORDPRESS" ? this.state.wordpress : 0 }
                               duration={1}
                               easingFunction={easeQuadInOut}
                             >          

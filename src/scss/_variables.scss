@@ -2,6 +2,7 @@ $light: #FFFFFF;
 $dark: #222a2d;
 $grey: #919191;
 $orange: #d39d30;
+$grey-dark: #4b4848;
 
 @font-face {
   font-family: 'lato';
@@ -13,6 +14,12 @@ $orange: #d39d30;
   src: url('../fonts/OpenSans-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/digital-7.ttf');
+}
+
 
 $lato: lato, sans-serif;
 $open: open, sans-serif;
+$digital: digital, sans-serif;
